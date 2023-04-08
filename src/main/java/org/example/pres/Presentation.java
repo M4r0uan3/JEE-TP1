@@ -10,8 +10,8 @@ public class Presentation {
          */
 //        DaoImpl dao = new DaoImpl();
         DaoImpl2 dao = new DaoImpl2();
-        MetierImpl metier = new MetierImpl();
-        metier.setDao(dao);
+        MetierImpl metier = new MetierImpl(dao);
+//        metier.setDao(dao);
         System.out.println(metier.calcul());
 
     }
